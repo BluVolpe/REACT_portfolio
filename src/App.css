@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: lightgray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  padding: 5% 5% 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: lightcyan;
 }
 
-.App-link {
-  color: #61dafb;
+header h1 {
+  color: darkslategrey;
+  background-color: lightblue;
+  padding: 5px 10% 5px 1%;
+  margin: 0;
+  font-size: 4vw;
+  line-height: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: darkslategrey;
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+
+nav a:hover {
+  color: black;
+}
+
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.hero-banner {
+  background: transparent;
+  min-height: 30vh;
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  background-image: url("./images/Banner.jpg");
+  
+}
+
+.hero-banner div {
+  flex: 0 0 90%;
+}
+
+.hero-banner h2 {
+  background-color: lightblue;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: xx-large;
+  display: inline;
+}
+
+img {
+  width: 80%;
+  height: auto;
+  max-width: 550px;
+  border: 2px solid black;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border: 5px black;
+}
+
+#picOne {
+  max-width: 1000px;
+  max-height: auto;
+  width: 80%;
+}
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid black;
+  font-size: xx-large;
+  line-height: 1.1;
+}
+
+.page-section > div {
+  flex: 0 0 70%;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
 }
