@@ -2,13 +2,31 @@
   box-sizing: border-box;
 }
 
+:root {
+  --gradient: linear-gradient(
+    
+   
+    lightblue,
+    darkslategrey
+
+  );
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: lightgray;
+
+  background-image: var(--gradient);
+  background-size: 400%;
+  animation: bg-animation 10s infinite;
 }
+
+/* .page-section {
+  border-top: solid 2px black;
+  
+} */
 
 header {
   padding: 5% 5% 0;
@@ -17,7 +35,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: lightcyan;
+  background-color: lightblue;
 }
 
 header h1 {
@@ -60,8 +78,18 @@ main {
   justify-content: flex-end;
   align-items: flex-end;
   text-align: right;
-  background-image: url("./images/Banner.jpg");
-  
+  background-size: cover;
+  background-image: url("./images/darkbackground.png");
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.hero-banner:hover {
+  background: transparent;
+  background-size: cover;
+  background-image: url("./images/darkbackground2.png");
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
 }
 
 .hero-banner div {
@@ -69,11 +97,12 @@ main {
 }
 
 .hero-banner h2 {
-  background-color: lightblue;
+  background-color: lightgrey;
   margin: 0;
   padding: 5px 10px;
   font-size: xx-large;
   display: inline;
+  border-radius: 12px;
 }
 
 img {
@@ -81,6 +110,7 @@ img {
   height: auto;
   max-width: 550px;
   border: 2px solid black;
+  
 }
 
 .examples {

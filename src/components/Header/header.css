@@ -1,4 +1,12 @@
 a:hover {
-    background-color: lightgrey;
+    background-color: white;
+    border-radius: 4px;
     transition: 800ms;
+}
+
+.myName {
+    color: rgb(116, 195, 221);
+    background-color: rgb(30, 30, 30);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }

@@ -1,0 +1,17 @@
+p {
+  width: 80%;
+  line-height: 20px;
+  color: black;
+}
+
+.page-section {
+    -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.page-section:hover {
+  background: rgba(23, 24, 23, 0.1);
+
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}

@@ -6,7 +6,7 @@ function Banner() {
     <section className="hero-banner">
 
       <div>
-        <h2></h2>
+        <h2>Full Stack Developer</h2>
       </div>
 
     </section>
