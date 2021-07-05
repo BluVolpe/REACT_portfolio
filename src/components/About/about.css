@@ -10,7 +10,7 @@ p {
 }
 
 .page-section:hover {
-  background: rgba(23, 24, 23, 0.1);
+  background: rgba(23, 24, 23, 0.2);
 
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;

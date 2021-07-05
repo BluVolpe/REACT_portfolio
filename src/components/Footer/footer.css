@@ -1,3 +1,22 @@
 footer {
+    margin-top: 0px;
     margin-bottom: 10px;
+    
+}
+
+#contact {
+    color: darkslategray;
+    margin-top: 70px;
+    
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    background-color: lightsalmon;
+    font-size: 20px;
+    box-shadow: 0px 0px 3px;
+    
 }

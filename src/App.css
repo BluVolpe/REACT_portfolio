@@ -5,9 +5,14 @@
 :root {
   --gradient: linear-gradient(
     
-   
-    lightblue,
-    darkslategrey
+   skyblue,
+    #B2DFF4,
+    #F9F8ED,
+    #F7E1EA,
+    #F8C8DA,
+    #FDDF9E,
+    #B4D5AC
+
 
   );
 }
@@ -19,7 +24,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
 
   background-image: var(--gradient);
-  background-size: 400%;
+  background-size: 100%;
   animation: bg-animation 10s infinite;
 }
 
@@ -97,7 +102,7 @@ main {
 }
 
 .hero-banner h2 {
-  background-color: lightgrey;
+  background-color: lightsalmon;
   margin: 0;
   padding: 5px 10px;
   font-size: xx-large;
@@ -110,6 +115,9 @@ img {
   height: auto;
   max-width: 550px;
   border: 2px solid black;
+  padding: 0px;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 2px;
   
 }
 
